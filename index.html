@@ -1,17 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aura - stickers collection</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/media.css">
 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+<header id="header" class="header">
+    <div class="container header__container">
+        <a class="logo" >
+            <img src="img/logo-aura.svg" alt="Логотип компании Аура">
+        </a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        Авторы
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        Коллекции
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        Сервисы
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <button class="btn header__btn">
+            Кошелёк
+        </button>
+    </div>
+</header>
+<main>
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero__title">
+                Площадка для реализации криптоскриптов
+            </h1>
+            <div class="hero__buttons">
+                <a href="#" class="btn hero__btn--fill">Купить</a>
+                <a href="#" class="btn hero__btn--stroke">Стать автором</a>
+            </div>
+        </div>
+    </section>
+    <section class="auction">
+        <div class="container">
+            <h2 class="title auction__title">
+                Аукцион
+                <span class="auction__state">Live auction</span>
+            </h2>
+            <div class="auction__content">
+                <div class="auction__image">
+                    <img src="img/stiker-1.png" alt="stiker witcher">
+                </div>
+                <div class="auction__info">
+                    <div class="auction-owner">
+                        <img src="img/avatar.png" alt="Avatar" class="auction-owner__avatar">
+                        <span class="auction__nickname">
+                            Serge_vm222
+                        </span>
+                        <h3 class="auction__subtitle">
+                            Witcherr_3 (xml_t5)
+                        </h3>
+                        <div class="auction__props">
+                            <div class="auction-bet">
+                                <span class="auction-bet__caption">
+                                    Ставка:
+                                </span>
+                                <span class="aution-bet__price">
+                                    0.10 ETH
+                                </span>
+                                <span class="aution-bet__price-dollars">
+                                    $351.24
+                                </span>
+                            </div>
+                            <div class="auction-timer">
+                                <span class="auction-timer__caption">
+                                    Окончание через:
+                                </span>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
 
 </body>
 </html>
